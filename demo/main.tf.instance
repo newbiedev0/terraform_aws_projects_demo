@@ -12,9 +12,8 @@ provider "aws" {
 variable "myhosts" {
   type = map
   default = {
-    K8sMaster = "t2.medium"
-    K8sWorker1 = "t2.micro"
-    K8sWorker2 = "t2.micro"
+    JenkinsMaster = "t2.micro"
+    JenkinsSlave01 = "t2.micro"
   }
 }
 
